@@ -1,4 +1,4 @@
-package java_basics;
+package java_basics_Day1_2;
 
 public class NumberValidate {
 
