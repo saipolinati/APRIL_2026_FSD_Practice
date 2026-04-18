@@ -2,7 +2,7 @@ package java_basics_Day1_2;
 
 import java.util.Scanner;
 
-public class PersonDetails {
+public class PersonDetails_6 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -16,7 +16,7 @@ public class PersonDetails {
 		int age=sc.nextInt();
 		System.out.println("weight :");
 		double weight= sc.nextDouble();
-		Person person=new Person(first_name,last_name,gender,age,weight);
+		Person_4 person=new Person_4(first_name,last_name,gender,age,weight);
 		System.out.println(person);
 		
 	}

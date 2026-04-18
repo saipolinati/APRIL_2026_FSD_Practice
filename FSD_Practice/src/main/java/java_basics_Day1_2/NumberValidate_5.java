@@ -1,6 +1,6 @@
 package java_basics_Day1_2;
 
-public class NumberValidate {
+public class NumberValidate_5 {
 
 	public static void main(String[] args) {
 		if( args.length==0) {

@@ -1,19 +1,22 @@
-package java_basics_Day1_2;
+package day_3;
 
 public class Person {
 	private String first_name;
 	private String last_name;
-	private String gender;
 	private int age;
+	private GenderEnum_8 gender;
 	private double weight;
+	private long phoneNumber;
 	
-	public Person(String first_name, String last_name, String gender, int age, double weight) {
+	
+	public Person(String first_name, String last_name, int age, GenderEnum_8 gender, double weight,long phoneNumber) {
 		super();
 		this.first_name = first_name;
 		this.last_name = last_name;
-		this.gender = gender;
 		this.age = age;
+		this.gender=gender;
 		this.weight = weight;
+		this.phoneNumber=phoneNumber;
 	}
 	public String getFirst_name() {
 		return first_name;
@@ -27,10 +30,10 @@ public class Person {
 	public void setLast_name(String last_name) {
 		this.last_name = last_name;
 	}
-	public String getGender() {
+	public GenderEnum_8 getGender() {
 		return gender;
 	}
-	public void setGender(String gender) {
+	public void setGender(GenderEnum_8 gender) {
 		this.gender = gender;
 	}
 	public int getAge() {
@@ -45,6 +48,13 @@ public class Person {
 	public void setWeight(double weight) {
 		this.weight = weight;
 	}
+	
+	public long getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(long phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
 	@Override
 	public String toString() {
 		return "Person Details\n"
@@ -52,6 +62,7 @@ public class Person {
 				+ "First Name : " + first_name + "\n"
 				+ "Last Name : " + last_name + "\n"
 				+ "Gender : " + gender + "\n"
+				+ "PhoneNumber :"+phoneNumber+"\n"
 				+ "Age : " + age+"\n"
 				+ "Weight :" + weight;
 	}
